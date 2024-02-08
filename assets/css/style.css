@@ -714,6 +714,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     display:flex;
     align-items:center;
     justify-content:center;
+    color: white;
     height:50px;
     text-transform:capitalize;
     margin-top: 3px;
