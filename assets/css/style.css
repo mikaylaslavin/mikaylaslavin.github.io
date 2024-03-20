@@ -257,7 +257,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     font-size: 16px;
     color: #999fb3;
     padding: 35px 0 43px;
-    border-bottom: 1px solid #999fb3;
+
 }
 .single-about-add-info {
     margin: 35px 0;
@@ -329,7 +329,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 --------------------------------------*/
 
 .education {
-    background:  #f9fbfd;
+    background:  #ffffff;
     padding-top:  50px;
 }
 .education-horizontal-timeline {
@@ -597,6 +597,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .portfolio {
     padding:  50px 0 100px;
     border:  1px solid #e5ebf2;
+}
+
+#typewriter {
+    color: #9f00ff;
+    font-weight: bolder;
 }
 
 .portfolio-content {padding-top: 100px;}
