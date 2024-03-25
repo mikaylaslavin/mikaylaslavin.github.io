@@ -271,19 +271,19 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.single-about-txt*/
 
 /*.single-about-img */
-.single-about-img{position: relative;box-shadow: 0 5px 20px rgba(14,25,80,.30);}
+.single-about-img{position: relative;box-shadow: 0 5px 20px rgba(80, 14, 66, 0.3);}
 .single-about-img:before {
     position:  absolute;
     content: " ";
     top: 0;
     left:  0;
-    width: 109%;
+    width: 100%;
     height:  100%;
-    background: rgba(31,44,108,.3);
+    /* background-size: cover; */
 }
 .single-about-img img {
     max-width: 500px;
-    height: 468px;
+    /* height: 468px; */
 }
 .about-list-icon{
     display: flex;
