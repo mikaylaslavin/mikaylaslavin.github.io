@@ -168,7 +168,6 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 /*.menu-ui-design*/
 
 
-
 /*.navbar-toggle */
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
@@ -179,7 +178,6 @@ nav.navbar.bootsnav .navbar-toggle {
 }
 nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
 /*.navbar-toggle */
-
 
 
 /*-------------------------------------
@@ -267,7 +265,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     margin: 35px 0;
 }
 .single-about-add-info h3 {
-    color: #636a82;
+    color: #826363;
     font-size: 16px;
     text-transform: capitalize;
 }
