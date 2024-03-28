@@ -190,7 +190,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background:url(../images/about/landingpage.gif)no-repeat;
     background-size:cover;
     background-position: center;
     height:890px;
@@ -205,6 +205,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     height:100%;
 }
 
+/*LANDING PAGE HEADER
 /*.header-text-area*/
 .header-text h2 {
     color: #fff;
@@ -212,8 +213,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.header-text h2 span {color: #78A599;}
+.header-text h2 span {color: #8E3965;}
 .header-text p {
     color: #fff;
     font-size: 20px;
@@ -221,6 +223,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     text-transform: uppercase;
     margin: 30px 0 60px;
     letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .header-text a {
     width: 200px;
@@ -229,14 +232,15 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     border-radius: 3px;
     text-transform: capitalize;
     color: #fff;
-    background: #046C65;
-    border:1px solid #046C65;
+    background: #8E3965;
+    border:1px solid #8E3965;
     box-shadow: 0 5px 20px #85ada3ab;
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
     -ms-transition: 0.3s linear; 
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#85ADA3;border: 1px solid #85ADA3;}
 /*.header-text-area*/
@@ -600,8 +604,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 #typewriter {
-    color: #85ADA3;
+    color: #ffffff;
     font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-content {padding-top: 100px;}
