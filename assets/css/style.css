@@ -50,7 +50,7 @@ body{
 a,a:hover,a:active,a:focus {
 	display:inline-block;
 	text-decoration:none;
-	color: #6a708e;
+	color: #000000;
 	font-size:16px;
 	padding:0;
 }
@@ -252,13 +252,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
 /*.single-about-txt*/
 .single-about-txt h3 {
     font-size:18px;
-    color: #3c4258;
+    color: #000000;
     text-transform: initial;
     line-height: 1.8;
 }
 .single-about-txt p {
     font-size: 16px;
-    color: #999fb3;
+    color: #000000;
     padding: 35px 0 43px;
 
 }
@@ -266,7 +266,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     margin: 35px 0;
 }
 .single-about-add-info h3 {
-    color: #826363;
+    color: #000000;
     font-size: 16px;
     text-transform: capitalize;
 }
@@ -345,7 +345,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
 .single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
 .single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
 .single-horizontal-timeline .timeline-content h5 {margin: 15px 0;}
-.single-horizontal-timeline p {color: #999fb3;max-width: 335px;}
+.single-horizontal-timeline p {color: #000000;max-width: 335px;}
 
 /*.timeline-horizontal-border*/
 .timeline-horizontal-border {
@@ -453,12 +453,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     position: relative;
 }
 .experience-time h2 {
-    font-weight: 400;
+    font-weight: 600;
 }
 .experience-time h3 {
     font-size: 16px;
-    font-weight: 300;
-    color: #636a82;
+    font-weight: 600;
+    color: #000000;
     margin-top: 14px;
     text-transform: uppercase;
 }
@@ -491,18 +491,18 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .timeline-content h4.title {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
 }
 .timeline-content h5 {
-    color: #636a82;
+    color: #000000;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
     margin: 18px 0 20px;
 }
 .main-timeline .description {
     font-size: 14px;
-    color: #999fb3;
+    color: #000000;
 }
 .main-timeline .timeline-content.right{
     float: right;
@@ -540,7 +540,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #b2c1ce;
+    border-right: 1px solid #000000;
     overflow:hidden;
     -webkit-transition:background 0.5s linear; 
     -moz-transition:background 0.5s linear; 
@@ -550,7 +550,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .profile-icon-name {
     text-transform: capitalize;
-    color: #636a82;
+    color: #000000;
     font-size: 16px;
 }
 .single-profile.profile-no-border{border-right:transparent;}
@@ -714,7 +714,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     box-shadow: none;
     outline: 0!important;
     background: #fff;
-    color: #636a82;
+    color: #000000;
     resize: none;
 }
 
@@ -768,7 +768,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .contact-add-head p {
     font-size:  16px;
     text-transform: capitalize;
-    color:  #636a82;
+    color:  #000000;
     font-weight:  300;
     margin-top:  6px;
 }
@@ -777,11 +777,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.contact-add-info */
 .contact-add-info { margin: 42px 0 52px;}
 .single-contact-add-info h3 {
-    color:  #636a82;
+    color:  #000000;
     font-weight:  500;
 }
 .single-contact-add-info p {
-    color:  #999fb3;
+    color:  #000000;
     font-size:  16px;
     margin-top:  18px;
 }
@@ -796,7 +796,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .hm-foot-icon ul li{float:left;}
 .hm-foot-icon ul li>a {
-    color: #636a82;
+    color: #8E3965;
     margin-right:18px;
     -webkit-transition: .3s; 
     -moz-transition:.3s; 
@@ -809,11 +809,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }/*hm-foot-icon*/
 
 .hm-footer-copyright p{
-    color: #888ea5;
+    color: #000000;
     text-transform: capitalize;
     padding: 38px 0;
 }
-.hm-footer-copyright p a {color: #888ea5;}
+.hm-footer-copyright p a {color: #000000;}
 /*===============================
     Scroll Top
 ===============================*/
