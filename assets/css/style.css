@@ -766,10 +766,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     color:  #046C65;
 }
 .contact-add-head p {
-    font-size:  16px;
+    font-size:  15px;
     text-transform: capitalize;
     color:  #000000;
-    font-weight:  300;
+    font-weight:  450;
     margin-top:  6px;
 }
 /* contact-adress */
@@ -865,6 +865,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 a#download-button {
     color: #ffffff;
+    font-weight: 650;
 }
 
 /*========================Thank you=================
