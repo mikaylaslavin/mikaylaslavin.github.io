@@ -605,7 +605,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 #typewriter {
     color: #ffffff;
     font-weight: bolder;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 .portfolio-content {padding-top: 100px;}
