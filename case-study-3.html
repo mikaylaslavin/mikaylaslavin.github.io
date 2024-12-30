@@ -100,7 +100,31 @@
                 <div class="col-md-12 text-center">
                     <div class="header-text">
                         <h2>The Painter's<span></span> Lament <br> Game UI Design <span></span> </h2>
-                        <p>By Mikayla Slavin</p>
+                       
+                                <!-- <p>UX DESIGNER</p> -->
+						<!-- <p id="typewriter">UX DESIGNER</p> -->
+						<div id="typewriter"></div>
+						<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+						<script>
+							// Your JavaScript code using Typewriter
+							const app = document.getElementById('typewriter');
+							const typewriter = new Typewriter(app, {
+								loop: true
+							});
+
+							typewriter
+								.typeString('UX Design')
+								.pauseFor(20)
+								.deleteChars(6)
+								.typeString('Research')
+								.pauseFor(20)
+								.deleteAll()
+								.pauseFor(20)
+								.deleteChars(8)
+								.typeString('Web Design')
+								.start();
+						</script>
+						<br>
                     </div>
                 </div>
             </div>
