@@ -204,6 +204,25 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     height:100%;
 }
 
+.casestudy1-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background: #8E3965;
+    background-size:cover;
+    background-position: center;
+    height:890px;
+}
+
+
+
+
+
+
+
+
+
 /*LANDING PAGE HEADER
 /*.header-text-area*/
 .header-text h2 {
@@ -867,5 +886,9 @@ a#download-button {
     color: #ffffff;
     font-weight: 650;
 }
+
+
+
+
 
 /*========================Thank you=================
