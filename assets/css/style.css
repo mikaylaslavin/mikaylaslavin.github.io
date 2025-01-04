@@ -1055,6 +1055,98 @@ a#casestudy1-button {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .header-text3 a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#85ADA3;border: 1px solid #85ADA3;}
-/*.header-text-area*/
 
-/*========================Thank you=================
+
+
+
+/*Lenovo Case Study*/
+.lenovo-role-info {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.lenovo-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#lenovo-intro p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#lenovo-objectives p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+#lenovo-agenda p {
+    font-size: 16px; 
+    margin-bottom: 15px;
+}
+
+#lenovo-intro h2,
+#lenovo-objectives h2,
+#lenovo-agenda h2,
+#lenovo-research h2,
+#lenovo-user-needs h2,
+#lenovo-analysis h2,
+#lenovo-goals h2,
+#lenovo-wireframes h2,
+#lenovo-conclusion h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #7F1A22;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000752;
+    font-weight: bold;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#lenovo-competitor-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#lenovo-competitor-table th,
+#lenovo-competitor-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#lenovo-competitor-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#lenovo-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0078D4;
+    color: white;
+    margin-top: 40px;
+}
+
+#play .section-heading h2 {
+    margin-top: 80px; /* Adjust the value to control the space */
+}
