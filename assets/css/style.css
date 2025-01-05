@@ -1363,44 +1363,59 @@ a#casestudy1-button {
     color: #000752;
 }
 
-#homepage-wireframe .content-and-image {
+/* Flexbox layout for the wireframe section */
+.wireframe-content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
+    gap: 20px; /* Space between text and image */
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
-#homepage-wireframe .text-content {
-    flex: 1;
-    max-width: 70%; /* Adjust the width of the text content */
+/* Text styling */
+.wireframe-text {
+    flex: 1; /* Allow the text to take up the available space */
 }
 
-#homepage-wireframe .image-container {
-    flex: 1;
-    max-width: 40%; /* Limit image width */
+/* Image container styling */
+.wireframe-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-left: auto;
+    margin-right: 50px; /* Move the image slightly to the left */
+    margin-top: 30px; /* Move the image slightly down */
 }
 
-#homepage-wireframe .wireframe-image {
-    width: 100%; /* Ensures the image takes up full width within its container */
-    height: auto;
+/* Image styling */
+.wireframe-image img {
+    max-width: 260px; /* Increase the image size */
+    height: auto; /* Maintain aspect ratio */
 }
 
+/* Media Query for smaller screens (mobile devices) */
 @media (max-width: 768px) {
-    #homepage-wireframe .content-and-image {
-        flex-direction: column;
-        align-items: center;
+    /* Stack the image under the text */
+    .wireframe-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align the items */
     }
 
-    #homepage-wireframe .text-content,
-    #homepage-wireframe .image-container {
-        max-width: 100%;
+    /* Make sure the image doesn't get too large on mobile */
+    .wireframe-image {
+        margin-left: 0; /* Remove margin on smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-top: 20px; /* Adjust spacing if needed */
     }
 
-    #homepage-wireframe .image-container {
-        margin-top: 20px;
+    /* Make the image slightly bigger on mobile */
+    .wireframe-image img {
+        max-width: 70%; /* Limit the image width to 90% on mobile */
+        width: 100%; /* Make the image responsive and fit the container */
+        max-width: 300px; /* Adjust max-width to make it slightly larger on mobile */
+    }
+
+    /* Optionally, make the text and image look centered */
+    .wireframe-text {
+        text-align: center; /* Center the text */
     }
 }
-
 
 
 
