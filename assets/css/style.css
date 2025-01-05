@@ -1154,7 +1154,42 @@ a#casestudy1-button {
     color: #000752;
 }
 
+/* Flexbox layout for the two columns */
+#lenovo-agenda .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the columns */
+    gap: 40px; /* Add space between the columns */
+}
 
+/* Style for the left column */
+#lenovo-agenda .left-column {
+    flex: 1; /* Make the left column take up more space */
+}
+
+/* Style for the right column */
+#lenovo-agenda .right-column {
+    flex: 1; /* Make the right column take up the same amount of space */
+}
+
+/* Ensure columns adjust properly on smaller screens */
+@media (max-width: 768px) {
+    #lenovo-agenda .content-wrapper {
+        flex-direction: column; /* Stack the columns on top of each other */
+        gap: 20px; /* Reduce gap between stacked items */
+    }
+}
+
+@media (max-width: 768px) {
+    #lenovo-agenda h2, 
+    #lenovo-agenda p {
+        margin-bottom: 10px; /* Reduce the bottom margin */
+    }
+
+    /* Ensure there's no large gap between the columns when stacked */
+    #lenovo-agenda .content-wrapper {
+        gap: 10px; /* Reduce the gap between stacked sections */
+    }
+}
 
 #lenovo-research p {
     font-size: 16px; 
@@ -1262,6 +1297,43 @@ a#casestudy1-button {
     margin-bottom: 15px;
 }
 
+/* Flexbox layout for the two columns */
+#lenovo-user-needs .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the columns */
+    gap: 40px; /* Add space between the columns */
+}
+
+/* Style for the left column */
+#lenovo-user-needs .left-column {
+    flex: 1; /* Make the left column take up more space */
+}
+
+/* Style for the right column */
+#lenovo-user-needs .right-column {
+    flex: 1; /* Make the right column take up the same amount of space */
+}
+
+/* Ensure columns adjust properly on smaller screens */
+@media (max-width: 768px) {
+    #lenovo-user-needs .content-wrapper {
+        flex-direction: column; /* Stack the columns on top of each other */
+        gap: 20px; /* Reduce gap between stacked items */
+    }
+}
+
+@media (max-width: 768px) {
+    #lenovo-user-needs h3, 
+    #lenovo-user-needs p {
+        margin-bottom: 10px; /* Reduce the bottom margin */
+    }
+
+    /* Ensure there's no large gap between the columns when stacked */
+    #lenovo-user-needs .content-wrapper {
+        gap: 10px; /* Reduce the gap between stacked sections */
+    }
+}
+
 #lenovo-user-personas p {
     font-size: 16px; 
     font-weight: 500;
@@ -1332,6 +1404,43 @@ a#casestudy1-button {
 }
 
 
+/* Flexbox layout for the two columns */
+#lenovo-analysis .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the columns */
+    gap: 40px; /* Add space between the columns */
+}
+
+/* Style for the left column */
+#lenovo-analysis .left-column {
+    flex: 1; /* Make the left column take up more space */
+}
+
+/* Style for the right column */
+#lenovo-analysis .right-column {
+    flex: 1; /* Make the right column take up the same amount of space */
+}
+
+/* Ensure columns adjust properly on smaller screens */
+@media (max-width: 768px) {
+    #lenovo-analysis .content-wrapper {
+        flex-direction: column; /* Stack the columns on top of each other */
+        gap: 20px; /* Reduce gap between stacked items */
+    }
+}
+
+@media (max-width: 768px) {
+    #lenovo-analysis h3, 
+    #lenovo-analysis p {
+        margin-bottom: 10px; /* Reduce the bottom margin */
+    }
+
+    /* Ensure there's no large gap between the columns when stacked */
+    #lenovo-analysis .content-wrapper {
+        gap: 10px; /* Reduce the gap between stacked sections */
+    }
+}
+
 #comp-summary p {
     font-size: 16px; 
     font-weight: 500;
@@ -1344,10 +1453,84 @@ a#casestudy1-button {
     margin-bottom: 15px;
 }
 
+/* Flexbox layout for the two columns */
+#lenovo-goals .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the columns */
+    gap: 40px; /* Add space between the columns */
+}
+
+/* Style for the left column */
+#lenovo-goals .left-column {
+    flex: 1; /* Make the left column take up more space */
+}
+
+/* Style for the right column */
+#lenovo-goals .right-column {
+    flex: 1; /* Make the right column take up the same amount of space */
+}
+
+/* Ensure columns adjust properly on smaller screens */
+@media (max-width: 768px) {
+    #lenovo-goals .content-wrapper {
+        flex-direction: column; /* Stack the columns on top of each other */
+        gap: 20px; /* Reduce gap between stacked items */
+    }
+}
+
+@media (max-width: 768px) {
+    #lenovo-goals h3, 
+    #lenovo-goals p {
+        margin-bottom: 10px; /* Reduce the bottom margin */
+    }
+
+    /* Ensure there's no large gap between the columns when stacked */
+    #lenovo-goals .content-wrapper {
+        gap: 10px; /* Reduce the gap between stacked sections */
+    }
+}
+
 #lenovo-actions p {
     font-size: 16px; 
     font-weight: 500;
     margin-bottom: 15px;
+}
+
+/* Flexbox layout for the two columns */
+#lenovo-actions .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the columns */
+    gap: 40px; /* Add space between the columns */
+}
+
+/* Style for the left column */
+#lenovo-actions .left-column {
+    flex: 1; /* Make the left column take up more space */
+}
+
+/* Style for the right column */
+#lenovo-actions .right-column {
+    flex: 1; /* Make the right column take up the same amount of space */
+}
+
+/* Ensure columns adjust properly on smaller screens */
+@media (max-width: 768px) {
+    #lenovo-actions .content-wrapper {
+        flex-direction: column; /* Stack the columns on top of each other */
+        gap: 20px; /* Reduce gap between stacked items */
+    }
+}
+
+@media (max-width: 768px) {
+    #lenovo-actions h3, 
+    #lenovo-actions p {
+        margin-bottom: 10px; /* Reduce the bottom margin */
+    }
+
+    /* Ensure there's no large gap between the columns when stacked */
+    #lenovo-actions .content-wrapper {
+        gap: 10px; /* Reduce the gap between stacked sections */
+    }
 }
 
 #homepage-wireframe p {
@@ -1418,8 +1601,6 @@ a#casestudy1-button {
 }
 
 
-
-
 #topics-wireframe p {
     font-size: 16px; 
     font-weight: 500;
@@ -1435,6 +1616,13 @@ a#casestudy1-button {
 }
 
 #promo-wireframe p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#lenovo-conclusion p {
     font-size: 16px; 
     font-weight: 500;
     margin-bottom: 15px;
