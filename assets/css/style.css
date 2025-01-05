@@ -353,26 +353,32 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     max-width: 500px;
     /* height: 468px; */
 }
-.about-list-icon{
+.about-list-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 109%;
+    left: 50%; /* This ensures it's centered */
+    transform: translateX(-50%); /* This ensures it's exactly centered */
+    width: 100%; /* Keep the width as 100% so the container stays in place */
     height: 90px;
     background: #046C65;
 }
-/*.ab-list-icon */
+
 .about-list-icon ul {
     display: flex;
+    justify-content: center; /* Ensure the list items are centered */
+    margin: 0;
+    padding: 0;
 }
-.about-list-icon  ul li a {
+
+.about-list-icon ul li a {
     padding-right: 22px;
-    cursor:pointer;
+    cursor: pointer;
     color: #fff;
 }
+
 .about-list-icon ul li a {
     cursor: pointer;
     color: #fff;
@@ -385,12 +391,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     line-height: 28px;
     text-align: center;
 }
+
 .about-list-icon ul li a i {
     margin-left: 6px;
 }
-/*.ab-list-icon */
-
-/*.single-about-img */
 
 /*-------------------------------------
         5.  Education
