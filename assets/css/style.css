@@ -1082,7 +1082,7 @@ a#casestudy1-button {
 /* Flexbox layout for the intro section */
 .intro-content {
     display: flex;
-    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between text and image */
 }
 
 /* Text styling */
@@ -1090,20 +1090,47 @@ a#casestudy1-button {
     flex: 1; /* Allow the text to take up the available space */
 }
 
-/* Image styling */
+/* Image container styling */
 .intro-image {
     flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-left: auto;
+    margin-right: 50px; /* Move the image slightly to the left */
+    margin-top: 5px; /* Move the image slightly down */
 }
 
+/* Image styling */
 .intro-image img {
-    max-width: 300px; /* Limit the image width */
-    height: auto; /* Maintain aspect ratio */*/
+    max-width: 550px; /* Increase the image size */
+    height: auto; /* Maintain aspect ratio */
 }
 
+/* Media Query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+    /* Stack the image under the text */
+    .intro-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align the items */
+    }
 
+    /* Make sure the image doesn't get too large on mobile */
+    .intro-image {
+        margin-left: 0; /* Remove margin on smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-top: 20px; /* Adjust spacing if needed */
+    }
 
+    /* Make the image slightly bigger on mobile */
+    .intro-image img {
+        max-width: 90%; /* Limit the image width to 90% on mobile */
+        width: 100%; /* Make the image responsive and fit the container */
+        max-width: 300px; /* Adjust max-width to make it slightly larger on mobile */
+    }
 
-
+    /* Optionally, make the text and image look centered */
+    .intro-text {
+        text-align: center; /* Center the text */
+    }
+}
 
 
 .lenovo-section {
@@ -1120,9 +1147,10 @@ a#casestudy1-button {
 
 
 #lenovo-agenda p {
-    font-size: 16px; 
+    font-size: 20px; 
     font-weight: 500;
     margin-bottom: 15px;
+    color: #000752;
 }
 
 #lenovo-research p {
