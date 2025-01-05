@@ -1071,20 +1071,44 @@ a#casestudy1-button {
 
 
 
-/*Lenovo Case Study*/
+////////////////////*Lenovo Case Study*////////////////////////////////////////////////////////////////////////
 .lenovo-role-info {
     font-size: 18px;
     margin-top: 10px;
 }
 
-.lenovo-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* Reset for Consistent Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding is included in width/height calculations */
 }
 
+/* Prevent Overflow and Ensure Full-Width Content */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Lenovo Section Styling */
+.lenovo-section {
+    max-width: 1250px; /* Maximum width for the box */
+    width: calc(100% - 40px); /* Ensure a margin of 20px on each side */
+    margin: 40px auto; /* Center the section on the page */
+    padding: 20px; /* Inner padding for content */
+    background-color: white; /* Background color for the section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* Media Query for Very Large Screens */
+@media (min-width: 1440px) {
+    .lenovo-section {
+        max-width: 1250px; /* Keep the max-width consistent */
+        margin: 40px auto; /* Center the box even on large screens */
+        width: calc(100% - 80px); /* Adds a consistent margin on large screens */
+    }
+}
 #lenovo-intro p {
     font-size: 16px;
     font-weight: 500;
@@ -1156,7 +1180,6 @@ a#casestudy1-button {
     font-weight: 500;
     margin-bottom: 15px;
 }
-
 
 
 #lenovo-agenda p {
@@ -1231,10 +1254,27 @@ a#casestudy1-button {
 #lenovo-research .research-image img {
     max-width: 350px; /* Limit image width */
     height: auto; /* Maintain aspect ratio */
-    
 }
 
-/* Responsive: Stack image below text on mobile */
+/* Button Styling */
+#lenovo-research .button-wrapper {
+    position: relative; /* Default positioning for laptop */
+    margin-top: 20px;
+    text-align: left; /* Keep left alignment on larger screens */
+}
+
+#lenovo-research .button-wrapper button {
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Responsive: Adjust layout for mobile screens */
 @media (max-width: 768px) {
     #lenovo-research .content-wrapper {
         flex-direction: column; /* Stack the content vertically */
@@ -1245,18 +1285,23 @@ a#casestudy1-button {
         max-width: 250px; /* Smaller size for mobile */
     }
 
-    /* Do not move the image up on mobile */
+    /* Reset margin-top for the image on mobile */
     #lenovo-research .research-image {
-        margin-top: 0; /* Reset margin-top on mobile */
+        margin-top: 0;
+    }
+
+    /* Adjust button alignment for mobile */
+    #lenovo-research .button-wrapper {
+        text-align: center; /* Center-align the button on mobile */
+        margin-top: 10px; /* Add extra spacing for visual balance */
     }
 }
 
-
+/* Link styling in the text */
 #lenovo-research .text-content p:last-child a {
     color: blue; /* Makes the link blue */
     text-decoration: underline; /* Underlines the link */
 }
-
 
 #lenovo-researchfindings p {
     font-size: 16px; 
@@ -1264,25 +1309,20 @@ a#casestudy1-button {
     margin-bottom: 10px;
 }
 
-
-/* Flexbox layout for the two columns */
 #lenovo-researchfindings .content-wrapper {
     display: flex;
     justify-content: space-between; /* Space out the columns */
     gap: 40px; /* Add space between the columns */
 }
 
-/* Style for the left column */
 #lenovo-researchfindings .left-column {
     flex: 1; /* Make the left column take up more space */
 }
 
-/* Style for the right column */
 #lenovo-researchfindings .right-column {
     flex: 1; /* Make the right column take up the same amount of space */
 }
 
-/* Ensure columns adjust properly on smaller screens */
 @media (max-width: 768px) {
     #lenovo-researchfindings .content-wrapper {
         flex-direction: column; /* Stack the columns on top of each other */
@@ -1302,48 +1342,42 @@ a#casestudy1-button {
     }
 }
 
-
 #lenovo-user-needs p {
     font-size: 16px; 
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-/* Flexbox layout for the two columns */
 #lenovo-user-needs .content-wrapper {
     display: flex;
     justify-content: space-between; /* Space out the columns */
     gap: 40px; /* Add space between the columns */
 }
 
-/* Style for the left column */
 #lenovo-user-needs .left-column {
-    flex: 1; /* Make the left column take up more space */
+    flex: 1; /* Make the left column take up equal space */
 }
 
-/* Style for the right column */
 #lenovo-user-needs .right-column {
-    flex: 1; /* Make the right column take up the same amount of space */
+    flex: 1; /* Make the right column take up equal space */
 }
 
-/* Ensure columns adjust properly on smaller screens */
+/* Fixing the issue with stacking the columns on mobile screens */
 @media (max-width: 768px) {
     #lenovo-user-needs .content-wrapper {
-        flex-direction: column; /* Stack the columns on top of each other */
-        gap: 20px; /* Reduce gap between stacked items */
+        flex-direction: column; /* Stack the columns vertically */
+        gap: 20px; /* Add space between the stacked columns */
+    }
+
+    #lenovo-user-needs .left-column, 
+    #lenovo-user-needs .right-column {
+        flex: none; /* Reset column flex so they don't stretch */
     }
 }
 
-@media (max-width: 768px) {
-    #lenovo-user-needs h3, 
-    #lenovo-user-needs p {
-        margin-bottom: 10px; /* Reduce the bottom margin */
-    }
-
-    /* Ensure there's no large gap between the columns when stacked */
-    #lenovo-user-needs .content-wrapper {
-        gap: 10px; /* Reduce the gap between stacked sections */
-    }
+#lenovo-user-needs h3, 
+#lenovo-user-needs p {
+    margin-bottom: 10px; /* Add space between text elements */
 }
 
 #lenovo-user-personas p {
@@ -1359,12 +1393,10 @@ a#casestudy1-button {
     margin-top: 20px;
 }
 
-/* Left column (text content) styling */
 .text-column {
     flex: 1; /* Take up the remaining space */
 }
 
-/* Right column (image content) styling */
 .image-column {
     flex: 1; /* Take up the right side of the screen */
     display: flex;
@@ -1374,7 +1406,6 @@ a#casestudy1-button {
     gap: 30px;
 }
 
-/* Styling for each persona image */
 .persona-image img {
     max-width: 90%; /* Ensure images are responsive */
     height: auto; /* Maintain aspect ratio */
@@ -1401,7 +1432,6 @@ a#casestudy1-button {
         margin-bottom: 20px; /* Space between images */
     }
 }
-
 
 #comp-analysis p {
     font-size: 16px; 
@@ -1612,7 +1642,6 @@ a#casestudy1-button {
     }
 }
 
-
 #topics-wireframe p {
     font-size: 16px; 
     font-weight: 500;
@@ -1717,4 +1746,56 @@ ul li {
 
 #education .section-heading h2 {
     margin-top: -100px; /* Adjust the value to control the space */
+}
+
+////////////////////*TLP Case Study*////////////////////////////////////////////////////////////////////////
+
+#painters-intro p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Flexbox layout for the intro section */
+.painters-intro-content {
+    display: flex;
+    gap: 20px; /* Space between text and image */
+}
+
+/* ACTUAL Text styling */
+.painters-intro-text p {
+    flex: 1; /* Allow the text to take up the available space */
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.painters-intro-text h2 {
+    flex: 1; /* Allow the text to take up the available space */
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+}
+
+.painters-intro-text h3 {
+    flex: 1; /* Allow the text to take up the available space */
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+}
+
+
+/* Image container styling */
+.painters-intro-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-left: auto;
+    margin-right: 50px; /* Move the image slightly to the left */
+    margin-top: 5px; /* Move the image slightly down */
+}
+
+/* Image styling */
+.painters-intro-image img {
+    max-width: 550px; /* Increase the image size */
+    height: auto; /* Maintain aspect ratio */
 }
