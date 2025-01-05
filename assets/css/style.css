@@ -1076,28 +1076,153 @@ a#casestudy1-button {
 #lenovo-intro p {
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 15px;
 }
+
+/* Flexbox layout for the intro section */
+.intro-content {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+}
+
+/* Text styling */
+.intro-text {
+    flex: 1; /* Allow the text to take up the available space */
+}
+
+/* Image styling */
+.intro-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.intro-image img {
+    max-width: 300px; /* Limit the image width */
+    height: auto; /* Maintain aspect ratio */*/
+}
+
+
+
+
+
+
+
+.lenovo-section {
+    margin: 20px;
+    padding: 20px;
+}
+
 
 #lenovo-objectives p {
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 15px;
 }
-
 
 
 #lenovo-agenda p {
     font-size: 16px; 
+    font-weight: 500;
     margin-bottom: 15px;
+}
+
+#lenovo-research p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#lenovo-researchfindings p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#lenovo-user-needs p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#lenovo-user-personas p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#comp-analysis p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#lenovo-analysis p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#comp-summary p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#lenovo-goals p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#lenovo-actions p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#homepage-wireframe p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#topics-wireframe p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#content-wireframe p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#promo-wireframe p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 5px;
 }
 
 #lenovo-intro h2,
 #lenovo-objectives h2,
 #lenovo-agenda h2,
 #lenovo-research h2,
+#lenovo-researchfindings h2,
 #lenovo-user-needs h2,
+#lenovo-user-personas h2,
+#comp-analysis h2,
 #lenovo-analysis h2,
+#comp-summary h2,
 #lenovo-goals h2,
-#lenovo-wireframes h2,
+#lenovo-actions h2,
+#homepage-wireframe h2,
+#topics-wireframe h2,
+#content-wireframe h2,
+#promo-wireframe h2,
 #lenovo-conclusion h2 {
     font-size: 28px;
     font-weight: bold;
