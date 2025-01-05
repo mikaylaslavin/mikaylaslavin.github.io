@@ -1159,11 +1159,101 @@ a#casestudy1-button {
     margin-bottom: 15px;
 }
 
+/* Flexbox layout for the research section */
+#lenovo-research .content-wrapper {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between; /* Space out text and image */
+    gap: 20px; /* Space between text and image */
+}
+
+/* Text styling for Lenovo research section */
+#lenovo-research .text-content {
+    flex: 1; /* Allow the text to take up the available space */
+}
+
+/* Image styling for Lenovo research section */
+#lenovo-research .research-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-top: -50px; /* Move the image up on regular display */
+}
+
+#lenovo-research .research-image img {
+    max-width: 350px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    
+}
+
+/* Responsive: Stack image below text on mobile */
+@media (max-width: 768px) {
+    #lenovo-research .content-wrapper {
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    #lenovo-research .research-image img {
+        max-width: 250px; /* Smaller size for mobile */
+    }
+
+    /* Do not move the image up on mobile */
+    #lenovo-research .research-image {
+        margin-top: 0; /* Reset margin-top on mobile */
+    }
+}
+
+
+#lenovo-research .text-content p:last-child a {
+    color: blue; /* Makes the link blue */
+    text-decoration: underline; /* Underlines the link */
+}
+
+
 #lenovo-researchfindings p {
     font-size: 16px; 
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
+
+
+/* Flexbox layout for the two columns */
+#lenovo-researchfindings .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the columns */
+    gap: 40px; /* Add space between the columns */
+}
+
+/* Style for the left column */
+#lenovo-researchfindings .left-column {
+    flex: 1; /* Make the left column take up more space */
+}
+
+/* Style for the right column */
+#lenovo-researchfindings .right-column {
+    flex: 1; /* Make the right column take up the same amount of space */
+}
+
+/* Ensure columns adjust properly on smaller screens */
+@media (max-width: 768px) {
+    #lenovo-researchfindings .content-wrapper {
+        flex-direction: column; /* Stack the columns on top of each other */
+        gap: 20px; /* Reduce gap between stacked items */
+    }
+}
+
+@media (max-width: 768px) {
+    #lenovo-researchfindings h3, 
+    #lenovo-researchfindings p {
+        margin-bottom: 10px; /* Reduce the bottom margin */
+    }
+
+    /* Ensure there's no large gap between the columns when stacked */
+    #lenovo-researchfindings .content-wrapper {
+        gap: 10px; /* Reduce the gap between stacked sections */
+    }
+}
+
+
+
 
 #lenovo-user-needs p {
     font-size: 16px; 
