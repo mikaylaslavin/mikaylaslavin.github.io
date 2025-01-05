@@ -1319,7 +1319,6 @@ a#casestudy1-button {
 }
 
 
-
 #comp-analysis p {
     font-size: 16px; 
     font-weight: 500;
@@ -1331,7 +1330,6 @@ a#casestudy1-button {
     font-weight: 500;
     margin-bottom: 15px;
 }
-
 
 
 #comp-summary p {
@@ -1358,6 +1356,54 @@ a#casestudy1-button {
     margin-bottom: 15px;
     margin-top: 5px;
 }
+
+#homepage-wireframe {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000752;
+}
+
+#homepage-wireframe .content-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#homepage-wireframe .text-content {
+    flex: 1;
+    max-width: 70%; /* Adjust the width of the text content */
+}
+
+#homepage-wireframe .image-container {
+    flex: 1;
+    max-width: 40%; /* Limit image width */
+}
+
+#homepage-wireframe .wireframe-image {
+    width: 100%; /* Ensures the image takes up full width within its container */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #homepage-wireframe .content-and-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #homepage-wireframe .text-content,
+    #homepage-wireframe .image-container {
+        max-width: 100%;
+    }
+
+    #homepage-wireframe .image-container {
+        margin-top: 20px;
+    }
+}
+
+
+
+
 
 #topics-wireframe p {
     font-size: 16px; 
