@@ -1077,38 +1077,15 @@ a#casestudy1-button {
     margin-top: 10px;
 }
 
-/* Reset for Consistent Box Sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ensures padding is included in width/height calculations */
-}
-
-/* Prevent Overflow and Ensure Full-Width Content */
-html, body {
-    width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* Lenovo Section Styling */
 .lenovo-section {
-    max-width: 1250px; /* Maximum width for the box */
-    width: calc(100% - 40px); /* Ensure a margin of 20px on each side */
-    margin: 40px auto; /* Center the section on the page */
-    padding: 20px; /* Inner padding for content */
-    background-color: white; /* Background color for the section */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    box-sizing: border-box; /* Include padding in width calculations */
+    max-width: 1250px;
+    margin: 40px auto; /* Centers the section horizontally */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
-/* Media Query for Very Large Screens */
-@media (min-width: 1440px) {
-    .lenovo-section {
-        max-width: 1250px; /* Keep the max-width consistent */
-        margin: 40px auto; /* Center the box even on large screens */
-        width: calc(100% - 80px); /* Adds a consistent margin on large screens */
-    }
-}
 #lenovo-intro p {
     font-size: 16px;
     font-weight: 500;
@@ -1799,3 +1776,4 @@ ul li {
     max-width: 550px; /* Increase the image size */
     height: auto; /* Maintain aspect ratio */
 }
+
