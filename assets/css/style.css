@@ -1146,12 +1146,15 @@ a#casestudy1-button {
 }
 
 
+
 #lenovo-agenda p {
-    font-size: 20px; 
+    font-size: 20px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #000752;
 }
+
+
 
 #lenovo-research p {
     font-size: 16px; 
