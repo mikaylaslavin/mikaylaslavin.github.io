@@ -1253,8 +1253,6 @@ a#casestudy1-button {
 }
 
 
-
-
 #lenovo-user-needs p {
     font-size: 16px; 
     font-weight: 500;
@@ -1267,6 +1265,58 @@ a#casestudy1-button {
     margin-bottom: 15px;
 }
 
+.user-personas-wrapper {
+    display: flex;
+    justify-content: space-between; /* Create space between columns */
+    gap: 20px; /* Space between the text and image columns */
+    margin-top: 20px;
+}
+
+/* Left column (text content) styling */
+.text-column {
+    flex: 1; /* Take up the remaining space */
+}
+
+/* Right column (image content) styling */
+.image-column {
+    flex: 1; /* Take up the right side of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Make images take equal space */
+    align-items: flex-end; /* Align images to the right */
+    gap: 30px;
+}
+
+/* Styling for each persona image */
+.persona-image img {
+    max-width: 90%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Stack the columns on top of each other on mobile */
+    .user-personas-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Stack the images vertically on mobile */
+    .image-column {
+        align-items: center; /* Center images on mobile */
+    }
+
+    /* Adjust image size on mobile */
+    .persona-image img {
+        max-width: 80%; /* Ensure images are responsive */
+        margin-bottom: 20px; /* Space between images */
+    }
+}
+
+
+
 #comp-analysis p {
     font-size: 16px; 
     font-weight: 500;
@@ -1278,6 +1328,8 @@ a#casestudy1-button {
     font-weight: 500;
     margin-bottom: 15px;
 }
+
+
 
 #comp-summary p {
     font-size: 16px; 
