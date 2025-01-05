@@ -396,6 +396,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     margin-left: 6px;
 }
 
+.single-about-img {
+    position: relative;
+    box-shadow: 0 5px 20px rgba(80, 14, 66, 0.3);
+    margin-top: 25px; /* Adjust this value to move it down */
+}
+
+
+
 /*-------------------------------------
         5.  Education
 --------------------------------------*/
@@ -1698,6 +1706,15 @@ ul li {
     margin-top: 40px;
 }
 
+#work .section-heading h2 {
+    margin-top: -50px; /* Adjust the value to control the space */
+}
+
+
 #play .section-heading h2 {
     margin-top: 80px; /* Adjust the value to control the space */
+}
+
+#education .section-heading h2 {
+    margin-top: -100px; /* Adjust the value to control the space */
 }
