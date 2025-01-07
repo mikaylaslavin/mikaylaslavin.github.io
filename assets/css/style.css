@@ -1817,20 +1817,47 @@ ul li {
     color: #3E1F19;
 }
 
+#painters-intro .painters-intro-text {
+    padding-top: 18px; /* Adjust this value to move the text down */
+  }
 
-/* Image container styling */
-.painters-intro-image {
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    margin-left: auto;
-    margin-right: 50px; /* Move the image slightly to the left */
-    margin-top: 5px; /* Move the image slightly down */
+  #painters-intro .painters-intro-content {
+    display: flex; /* Makes content appear in a row */
+    justify-content: space-between; /* Distribute space between text and image */
+    align-items: center; /* Vertically center the content */
 }
 
-/* Image styling */
-.painters-intro-image img {
-    max-width: 650px; /* Increase the image size */
+#painters-intro .painters-intro-text {
+    flex: 1; /* Makes text take up available space */
+    padding-right: 20px; /* Add space between text and image */
+}
+
+#painters-intro .painters-testpic-image img {
+    width: 470px; /* Adjust image width as needed */
     height: auto; /* Maintain aspect ratio */
+    margin-right: 40px;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #painters-intro .painters-intro-content {
+        flex-direction: column; /* Stacks the content vertically on smaller screens */
+        align-items: flex-start; /* Align text to the left on mobile */
+    }
+
+    #painters-intro .painters-testpic-image img {
+        width: 100%; /* Make the image full-width on mobile */
+        max-width: 400px; /* Optional max-width to prevent overly large images */
+        margin-top: 20px; /* Adds space between text and image */
+    }
+
+    #painters-intro .painters-intro-text {
+        padding-right: 0; /* Remove right padding for mobile */
+    }
+}
+
+
+
 
 #painters-problem p {
     font-size: 16px;
@@ -1890,6 +1917,45 @@ ul li {
     font-weight: bold;
     color: #3E1F19;
 }
+
+
+#painters-objectives .painters-intro-content {
+    display: flex; /* Makes content appear in a row */
+    justify-content: space-between; /* Distribute space between text and image */
+    align-items: center; /* Vertically center the content */
+}
+
+#painters-objectives .painters-intro-text {
+    flex: 1; /* Makes text take up available space */
+    padding-right: 20px; /* Add space between text and image */
+}
+
+#painters-objectives .painters-objectives-image img {
+    width: 570px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #painters-objectives .painters-intro-content {
+        flex-direction: column; /* Stacks the content vertically on smaller screens */
+        align-items: flex-start; /* Align text to the left on mobile */
+    }
+
+    #painters-objectives .painters-objectives-image img {
+        width: 100%; /* Make the image full-width on mobile */
+        max-width: 400px; /* Optional max-width to prevent overly large images */
+        margin-top: 20px; /* Adds space between text and image */
+    }
+
+    #painters-objectives .painters-intro-text {
+        padding-right: 0; /* Remove right padding for mobile */
+    }
+}
+
+
+
+
 
 #painters-agenda p {
     font-size: 20px;
