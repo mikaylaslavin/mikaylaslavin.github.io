@@ -2522,6 +2522,63 @@ ul li {
     }
   }
 
+  .image-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .image-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  
+/* Button Styling */
+.button-wrapper {
+    position: relative;
+    margin-top: 20px;
+    text-align: center; /* Center the button */
+}
+
+.button-wrapper button {
+    padding: 10px 20px;
+    background-color: #184b70; /* Blue background */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.button-wrapper button:hover {
+    background-color: #145b8e; /* Darker blue on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .button-wrapper button {
+        width: 100%; /* Full-width button on mobile */
+        padding: 12px;
+    }
+}
+
+
+
+
+
 
 
 #painters-conclusion h2 {
