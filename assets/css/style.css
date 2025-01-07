@@ -2008,6 +2008,16 @@ ul li {
     margin-bottom: 15px;
 }
 
+#painters-agenda h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: -60px;
+}
+
+
+
+
 #painters-agenda p {
     font-size: 20px;
     font-weight: bold;
@@ -2019,6 +2029,9 @@ ul li {
     font-weight: 500;
     margin-bottom: 15px;
 }
+
+
+
 
 /* Flexbox layout for the research section */
 #painters-research .content-wrapper {
@@ -2081,7 +2094,7 @@ ul li {
     font-size: 28px;
     font-weight: bold;
     color: #184B70;
-    margin-bottom: 15px;
+    margin-bottom: -15px;
 }
 
 #painters-research h3 {
@@ -2138,12 +2151,6 @@ ul li {
     }
 }
 
-/* Container for image and button */
-.research-image-container {
-    text-align: center; /* Center align both the image and the button */
-    margin-top: 20px; /* Adds some space above the image */
-}
-
 /* Style for the blue rectangle button */
 .blue-rectangle-button {
     display: inline-block;
@@ -2165,17 +2172,11 @@ ul li {
     background-color: #145b8e; /* Darker blue on hover */
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .blue-rectangle-button {
-        width: 100%; /* Makes the button full-width on mobile */
-        padding: 12px;
-    }
+/* Center align the button */
+.button-wrapper {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Space between the content and the button */
 }
-
-
-
-
 
 
 
@@ -2420,7 +2421,7 @@ ul li {
 
 
 .logo-image {
-    max-width: 70%; /* Adjust the width to make the image smaller */
+    max-width: 60%; /* Adjust the width to make the image smaller */
     height: auto; /* Maintain the aspect ratio */
     display: block; /* Make the image a block element for centering */
     margin: 0 auto; /* Center the image horizontally */
@@ -2580,7 +2581,6 @@ ul li {
 
 
 
-
 #painters-conclusion h2 {
     font-size: 28px;
     font-weight: bold;
@@ -2600,3 +2600,21 @@ ul li {
     margin-bottom: 15px;
 }
 
+#painters-credits h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+}
+
+#painters-credits h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+}
+
+#painters-credits p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
