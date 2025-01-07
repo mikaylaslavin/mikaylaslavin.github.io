@@ -1828,7 +1828,7 @@ ul li {
 
 /* Image styling */
 .painters-intro-image img {
-    max-width: 550px; /* Increase the image size */
+    max-width: 650px; /* Increase the image size */
     height: auto; /* Maintain aspect ratio */
 }
 
