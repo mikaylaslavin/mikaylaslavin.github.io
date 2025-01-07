@@ -2156,7 +2156,8 @@ ul li {
     height: auto; /* Maintain aspect ratio */
   }
   
-  
+
+
 
 #painters-branding h2 {
     font-size: 28px;
@@ -2246,6 +2247,15 @@ ul li {
     font-weight: 500;
     margin-bottom: 15px;
 }
+
+
+.logo-image {
+    max-width: 70%; /* Adjust the width to make the image smaller */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Make the image a block element for centering */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
 
 
 
