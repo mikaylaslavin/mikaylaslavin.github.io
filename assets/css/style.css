@@ -1072,6 +1072,11 @@ a#casestudy1-button {
 
 
 ////////////////////*Lenovo Case Study*////////////////////////////////////////////////////////////////////////
+
+
+
+
+/*This messes with all of the sections idk why*/
 .lenovo-role-info {
     font-size: 18px;
     margin-top: 10px;
@@ -1145,19 +1150,62 @@ a#casestudy1-button {
     }
 }
 
-
 .lenovo-section {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
 }
 
+#lenovo-problem p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Styling for the lenovo-problem section */
+#lenovo-problem.lenovo-section {
+    padding: 20px;
+}
+
+/* Two-column layout for Site Background and Problem Statement in the lenovo-problem section */
+#lenovo-problem .two-column-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Column styles within the lenovo-problem section */
+#lenovo-problem .column {
+    width: 48%; /* Adjust width as needed */
+    box-sizing: border-box;
+}
+
+/* Optional styling for better readability and spacing */
+#lenovo-problem .intro-text h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#lenovo-problem .intro-text p {
+    margin-bottom: 15px;
+}
+
+/* Mobile responsiveness: Stacks the columns on smaller screens */
+@media (max-width: 768px) {
+    #lenovo-problem .two-column-layout {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #lenovo-problem .column {
+        width: 100%;
+    }
+}
 
 #lenovo-objectives p {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-
 
 #lenovo-agenda p {
     font-size: 20px;
@@ -1422,7 +1470,6 @@ a#casestudy1-button {
     margin-bottom: 15px;
 }
 
-
 /* Flexbox layout for the two columns */
 #lenovo-analysis .content-wrapper {
     display: flex;
@@ -1648,6 +1695,7 @@ a#casestudy1-button {
 }
 
 #lenovo-intro h2,
+#lenovo-problem h2,
 #lenovo-objectives h2,
 #lenovo-agenda h2,
 #lenovo-research h2,
@@ -1724,6 +1772,16 @@ ul li {
 #education .section-heading h2 {
     margin-top: -100px; /* Adjust the value to control the space */
 }
+
+
+
+
+
+
+
+
+
+
 
 ////////////////////*TLP Case Study*////////////////////////////////////////////////////////////////////////
 
