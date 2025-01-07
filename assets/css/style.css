@@ -2331,6 +2331,23 @@ ul li {
 
 }
 
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  
+
+
+
+
+
+
 /* Basic styles for the #painters-researchfindings section */
 #painters-branding {
     padding: 20px;
