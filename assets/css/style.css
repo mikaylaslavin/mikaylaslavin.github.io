@@ -2045,45 +2045,37 @@ ul li {
 }
 
 /* Button Styling */
-#painters-research .button-wrapper {
+.research-image-container .button-wrapper {
     position: relative; /* Default positioning for laptop */
-    margin-top: 20px;
-    text-align: left; /* Keep left alignment on larger screens */
+    margin-top: 30px;
+    margin-bottom: -60px;
+    text-align: center; /* Center the button */
 }
 
-#painters-research .button-wrapper button {
+.research-image-container .button-wrapper button {
     padding: 10px 20px;
-    background-color: darkred;
+    background-color: #184b70; /* Blue background */
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
-/* Responsive: Adjust layout for mobile screens */
+.research-image-container .button-wrapper button:hover {
+    background-color: #145b8e; /* Darker blue on hover */
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
-    #painters-research .content-wrapper {
-        flex-direction: column; /* Stack the content vertically */
-        align-items: center; /* Center align the content */
-    }
-
-    #painters-research .research-image img {
-        max-width: 250px; /* Smaller size for mobile */
-    }
-
-    /* Reset margin-top for the image on mobile */
-    #painters-research .research-image {
-        margin-top: 0;
-    }
-
-    /* Adjust button alignment for mobile */
-    #painters-research .button-wrapper {
-        text-align: center; /* Center-align the button on mobile */
-        margin-top: 10px; /* Add extra spacing for visual balance */
+    .research-image-container .button-wrapper button {
+        width: 100%; /* Full-width button on mobile */
+        padding: 12px;
     }
 }
+
 
 #painters-research h2 {
     font-size: 28px;
@@ -2098,8 +2090,88 @@ ul li {
     color: #3E1F19;
 }
 
+#painters-research .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
 
+#painters-research .text-content {
+    padding: 15px;
+}
 
+#painters-research .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#painters-research .text-content {
+    padding: 15px;
+}
+
+#painters-research .research-image {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    margin-top: 20px; /* Adds space above the image */
+}
+
+#painters-research .research-image img {
+    width: 100%;
+    max-width: 800px; /* Larger max-width for larger screens */
+    height: auto;
+}
+
+/* Laptop responsiveness */
+@media (min-width: 1024px) {
+    #painters-research .research-image img {
+        max-width: 1150px; /* Larger image size on laptops */
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #painters-research .research-image img {
+        max-width: 100%; /* Makes the image full-width on mobile */
+    }
+}
+
+/* Container for image and button */
+.research-image-container {
+    text-align: center; /* Center align both the image and the button */
+    margin-top: 20px; /* Adds some space above the image */
+}
+
+/* Style for the blue rectangle button */
+.blue-rectangle-button {
+    display: inline-block;
+    width: 200px; /* Fixed width for the rectangle button */
+    padding: 12px;
+    background-color: #184b70; /* Blue background */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Removes underline */
+    border-radius: 4px; /* Rounded corners for a subtle look */
+    margin-top: 20px; /* Space between the image and the button */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for the button */
+.blue-rectangle-button:hover {
+    background-color: #145b8e; /* Darker blue on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .blue-rectangle-button {
+        width: 100%; /* Makes the button full-width on mobile */
+        padding: 12px;
+    }
+}
 
 
 
