@@ -1155,51 +1155,53 @@ a#casestudy1-button {
     padding: 20px;
 }
 
-#lenovo-problem p {
+
+/* Styles specific to #painters-researchfindings */
+#lenovooverview {
+    padding: 20px;
+  }
+  
+  #lenovooverview h2 {
+    text-align: left; /* Moved from center to left */
+    margin-bottom: 20px;
+  }
+  
+  #lenovooverview .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #lenovooverview .left-column,
+  #lenovooverview .right-column {
+    width: 48%;
+  }
+  
+  #lenovooverview h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #7F1A22;
+    margin-bottom: 15px;
+  }
+  
+  #lenovooverview p {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 15px;
-}
-
-/* Styling for the lenovo-problem section */
-#lenovo-problem.lenovo-section {
-    padding: 20px;
-}
-
-/* Two-column layout for Site Background and Problem Statement in the lenovo-problem section */
-#lenovo-problem .two-column-layout {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-/* Column styles within the lenovo-problem section */
-#lenovo-problem .column {
-    width: 48%; /* Adjust width as needed */
-    box-sizing: border-box;
-}
-
-/* Optional styling for better readability and spacing */
-#lenovo-problem .intro-text h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-#lenovo-problem .intro-text p {
-    margin-bottom: 15px;
-}
-
-/* Mobile responsiveness: Stacks the columns on smaller screens */
-@media (max-width: 768px) {
-    #lenovo-problem .two-column-layout {
-        flex-direction: column;
-        gap: 10px;
+  }
+  
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    #lenovooverview .content-wrapper {
+      flex-direction: column;
     }
-
-    #lenovo-problem .column {
-        width: 100%;
+  
+    #lenovooverview .left-column,
+    #lenovooverview .right-column {
+      width: 100%;
     }
-}
+  }
+  
+
 
 #lenovo-objectives p {
     font-size: 16px;
@@ -1778,11 +1780,6 @@ ul li {
 
 
 
-
-
-
-
-
 ////////////////////*TLP Case Study*////////////////////////////////////////////////////////////////////////
 
 #painters-intro p {
@@ -1833,5 +1830,526 @@ ul li {
 .painters-intro-image img {
     max-width: 550px; /* Increase the image size */
     height: auto; /* Maintain aspect ratio */
+}
+
+#painters-problem p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Styling for the lenovo-problem section */
+#painters-problem.lenovo-section {
+    padding: 20px;
+}
+
+/* Two-column layout for Site Background and Problem Statement in the lenovo-problem section */
+#painters-problem .two-column-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Column styles within the lenovo-problem section */
+#painters-problem .column {
+    width: 48%; /* Adjust width as needed */
+    box-sizing: border-box;
+}
+
+/* Optional styling for better readability and spacing */
+#painters-problem .intro-text h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#painters-problem .intro-text p {
+    margin-bottom: 15px;
+}
+
+/* Mobile responsiveness: Stacks the columns on smaller screens */
+@media (max-width: 768px) {
+    #painters-problem .two-column-layout {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #painters-problem .column {
+        width: 100%;
+    }
+}
+
+#painters-problem h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+}
+
+#painters-problem h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+}
+
+#painters-agenda p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000752;
+}
+
+/* Flexbox layout for the two columns */
+#painters-agenda .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the columns */
+    gap: 40px; /* Add space between the columns */
+}
+
+/* Style for the left column */
+#painters-agenda .left-column {
+    flex: 1; /* Make the left column take up more space */
+}
+
+/* Style for the right column */
+#painters-agenda .right-column {
+    flex: 1; /* Make the right column take up the same amount of space */
+}
+
+/* Ensure columns adjust properly on smaller screens */
+@media (max-width: 768px) {
+    #painters-agenda .content-wrapper {
+        flex-direction: column; /* Stack the columns on top of each other */
+        gap: 20px; /* Reduce gap between stacked items */
+    }
+}
+
+@media (max-width: 768px) {
+    #painters-agenda h2, 
+    #painters-agenda p {
+        margin-bottom: 10px; /* Reduce the bottom margin */
+    }
+
+    /* Ensure there's no large gap between the columns when stacked */
+    #painters-agenda .content-wrapper {
+        gap: 10px; /* Reduce the gap between stacked sections */
+    }
+}
+
+#painters-agenda h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+}
+
+#painters-agenda p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+}
+
+#painters-research p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Flexbox layout for the research section */
+#painters-research .content-wrapper {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between; /* Space out text and image */
+    gap: 20px; /* Space between text and image */
+}
+
+/* Text styling for Lenovo research section */
+#painters-research .text-content {
+    flex: 1; /* Allow the text to take up the available space */
+}
+
+/* Image styling for Lenovo research section */
+#painters-research .research-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-top: -50px; /* Move the image up on regular display */
+}
+
+#painters-research .research-image img {
+    max-width: 350px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Button Styling */
+#painters-research .button-wrapper {
+    position: relative; /* Default positioning for laptop */
+    margin-top: 20px;
+    text-align: left; /* Keep left alignment on larger screens */
+}
+
+#painters-research .button-wrapper button {
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Responsive: Adjust layout for mobile screens */
+@media (max-width: 768px) {
+    #painters-research .content-wrapper {
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    #painters-research .research-image img {
+        max-width: 250px; /* Smaller size for mobile */
+    }
+
+    /* Reset margin-top for the image on mobile */
+    #painters-research .research-image {
+        margin-top: 0;
+    }
+
+    /* Adjust button alignment for mobile */
+    #painters-research .button-wrapper {
+        text-align: center; /* Center-align the button on mobile */
+        margin-top: 10px; /* Add extra spacing for visual balance */
+    }
+}
+
+#painters-research h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+}
+
+#painters-research h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+}
+
+/* Basic styles for the #painters-researchfindings section */
+#painters-researchfindings {
+    padding: 20px;
+  }
+  
+  #painters-researchfindings h2 {
+    text-align: left;  /* Change from center to left */
+    margin-bottom: 20px;
+  }
+  
+  #painters-researchfindings .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #painters-researchfindings .left-column,
+  #painters-researchfindings .right-column {
+    width: 48%;
+  }
+  
+  #painters-researchfindings h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+  }
+  
+  #painters-researchfindings h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+  }
+  
+  #painters-researchfindings p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    #painters-researchfindings .content-wrapper {
+      flex-direction: column;
+    }
+  
+    #painters-researchfindings .left-column,
+    #painters-researchfindings .right-column {
+      width: 100%;
+    }
+  }
+  
+  
+  
+
+#painters-researchfindings h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+}
+
+#painters-researchfindings h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+}
+
+#painters-researchfindings p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#painters-wireframes h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+}
+
+#painters-wireframes h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+}
+
+#painters-wireframes p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Simplified styles for the two-column layout */
+#painters-wireframes .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #painters-wireframes .left-column,
+  #painters-wireframes .right-column {
+    width: 48%;
+  }
+  
+  @media (max-width: 768px) {
+    #painters-wireframes .content-wrapper {
+      flex-direction: column;
+    }
+  
+    #painters-wireframes .left-column,
+    #painters-wireframes .right-column {
+      width: 100%;
+    }
+  }
+  
+  
+
+#painters-branding h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+}
+
+#painters-branding h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+    margin-bottom: 5px;
+}
+
+#painters-branding p {
+    font-size: 16px; 
+    font-weight: 500;
+
+}
+
+/* Basic styles for the #painters-researchfindings section */
+#painters-branding {
+    padding: 20px;
+  }
+  
+  #painters-branding h2 {
+    text-align: left;  /* Change from center to left */
+    margin-bottom: 20px;
+  }
+  
+  #painters-branding .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #painters-branding .left-column,
+  #painters-branding .right-column {
+    width: 48%;
+  }
+  
+  #painters-branding h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+  }
+  
+  #painters-branding h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+  }
+  
+  #painters-branding p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    #painters-branding .content-wrapper {
+      flex-direction: column;
+    }
+  
+    #painters-branding .left-column,
+    #painters-branding .right-column {
+      width: 100%;
+    }
+  }
+
+#painters-logo h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+}
+
+#painters-logo h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+}
+
+#painters-logo p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+
+/* Simplified styles for the two-column layout */
+#painters-logo .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #painters-logo .left-column,
+  #painters-logo .right-column {
+    width: 48%;
+  }
+  
+  @media (max-width: 768px) {
+    #painters-logo .content-wrapper {
+      flex-direction: column;
+    }
+  
+    #painters-logo .left-column,
+    #painters-logo .right-column {
+      width: 100%;
+    }
+  }
+
+
+#painters-presentation h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+}
+
+#painters-presentation h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+}
+
+#painters-presentation p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Basic styles for the #painters-researchfindings section */
+#painters-presentation {
+    padding: 20px;
+  }
+  
+  #painters-presentation h2 {
+    text-align: left;  /* Change from center to left */
+    margin-bottom: 20px;
+  }
+  
+  #painters-presentation .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #painters-presentation .left-column,
+  #painters-presentation .right-column {
+    width: 48%;
+  }
+  
+  #painters-presentation h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+  }
+  
+  #painters-presentation h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+  }
+  
+  #painters-presentation p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    #painters-presentation .content-wrapper {
+      flex-direction: column;
+    }
+  
+    #painters-presentation .left-column,
+    #painters-presentation .right-column {
+      width: 100%;
+    }
+  }
+
+
+
+#painters-conclusion h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #184B70;
+    margin-bottom: 15px;
+}
+
+#painters-conclusion h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E1F19;
+}
+
+#painters-conclusion p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
