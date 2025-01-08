@@ -2618,3 +2618,90 @@ ul li {
     font-weight: 500;
     margin-bottom: 15px;
 }
+
+
+
+
+
+
+ /////////////////////////////////////* Campus Cravings *//////////////////////////////////////////////////////
+
+
+ #campus-intro .campus-intro-text p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+}
+
+#campus-intro .campus-intro-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF5E5E;
+    margin-bottom: 15px;
+}
+
+#campus-intro .campus-intro-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #006D5D;
+}
+
+#campus-overview h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF5E5E;
+    margin-bottom: 15px;
+}
+
+#campus-overview h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #006D5D;
+}
+
+
+
+
+#campus-overview {
+    padding: 20px;
+  }
+  
+  #campus-overview h2 {
+    text-align: left; /* Moved from center to left */
+    margin-bottom: 20px;
+  }
+  
+  #campus-overview .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #campus-overview .left-column,
+  #campus-overview .right-column {
+    width: 48%;
+  }
+  
+  #campus-overview h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #7F1A22;
+    margin-bottom: 15px;
+  }
+  
+  #campus-overview p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    #campus-overview .content-wrapper {
+      flex-direction: column;
+    }
+  
+    #campus-overview .left-column,
+    #campus-overview .right-column {
+      width: 100%;
+    }
+  }
