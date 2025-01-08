@@ -2975,22 +2975,3 @@ ul li {
     }
 }
 
-
-#campus-researchfindings h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #FF5E5E;
-    margin-bottom: 15px;
-}
-
-#campus-researchfindings h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #006D5D;
-}
-
-#campus-researchfindings p {
-    font-size: 16px !important;
-    font-weight: 500 !important;
-    margin-bottom: 15px !important;
-}
