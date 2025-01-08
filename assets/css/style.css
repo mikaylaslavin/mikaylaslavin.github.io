@@ -2646,6 +2646,63 @@ ul li {
     color: #006D5D;
 }
 
+/* Container that holds both text and image */
+.campus-intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for text section */
+.campus-intro-text {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+/* Style for image section */
+.campus-intro-image {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 20px;
+}
+
+.campus-intro-image img {
+    width: 70%; /* Ensure the image is responsive */
+    height: auto;
+}
+
+/* Laptop responsiveness (example for screens between 768px and 1024px) */
+@media (max-width: 1024px) {
+    .campus-intro-image img {
+        width: 80%; /* Reduce the width to 50% on laptop-sized screens */
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .campus-intro-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align the content */
+    }
+
+    .campus-intro-text {
+        margin-bottom: 20px; /* Add space below text */
+        text-align: center;
+    }
+
+    .campus-intro-image {
+        margin-left: 0;
+    }
+
+    .campus-intro-image img {
+        width: 80%; /* Reduce the image size even more on mobile */
+    }
+}
+
+
+
 #campus-overview h2 {
     font-size: 28px;
     font-weight: bold;
@@ -2658,7 +2715,6 @@ ul li {
     font-weight: bold;
     color: #006D5D;
 }
-
 
 
 
@@ -2705,3 +2761,164 @@ ul li {
       width: 100%;
     }
   }
+
+  #campus-overview h2 {
+    margin-bottom: -8px;  /* Adjust as needed */
+}
+
+
+#campus-objectives .campus-intro-content {
+    display: flex; /* Makes content appear in a row */
+    justify-content: space-between; /* Distribute space between text and image */
+    align-items: center; /* Vertically center the content */
+}
+
+#campus-objectives .painters-intro-text {
+    flex: 1; /* Makes text take up available space */
+    padding-right: 20px; /* Add space between text and image */
+}
+
+#campus-objectives .painters-objectives-image img {
+    width: 570px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #campus-objectives .campus-intro-content {
+        flex-direction: column; /* Stacks the content vertically on smaller screens */
+        align-items: flex-start; /* Align text to the left on mobile */
+    }
+
+    #campus-objectives .campus-objectives-image img {
+        width: 100%; /* Make the image full-width on mobile */
+        max-width: 400px; /* Optional max-width to prevent overly large images */
+        margin-top: 20px; /* Adds space between text and image */
+    }
+
+    #campus-objectives .campus-intro-text {
+        padding-right: 0; /* Remove right padding for mobile */
+    }
+}
+
+
+#campus-objectives h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF5E5E;
+    margin-bottom: 15px;
+}
+
+#campus-objectives h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #006D5D;
+}
+
+#campus-objectives p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+}
+
+
+#campus-objectives .objectives-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#campus-objectives .left-column, 
+#campus-objectives .right-column {
+    flex: 1;
+    min-width: 45%; /* Ensures columns take up nearly equal space */
+}
+
+#campus-objectives h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#campus-objectives p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+/* Flexbox layout for the two columns */
+#campus-agenda .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the columns */
+    gap: 40px; /* Add space between the columns */
+}
+
+/* Style for the left column */
+#campus-agenda .left-column {
+    flex: 1; /* Make the left column take up more space */
+}
+
+/* Style for the right column */
+#campus-agenda .right-column {
+    flex: 1; /* Make the right column take up the same amount of space */
+}
+
+/* Ensure columns adjust properly on smaller screens */
+@media (max-width: 768px) {
+    #campus-agenda .content-wrapper {
+        flex-direction: column; /* Stack the columns on top of each other */
+        gap: 20px; /* Reduce gap between stacked items */
+    }
+}
+
+@media (max-width: 768px) {
+    #campus-agenda h2, 
+    #campus-agenda p {
+        margin-bottom: 10px; /* Reduce the bottom margin */
+    }
+
+    /* Ensure there's no large gap between the columns when stacked */
+    #campus-agenda .content-wrapper {
+        gap: 10px; /* Reduce the gap between stacked sections */
+    }
+}
+
+
+
+#campus-agenda p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #006D5D;
+}
+
+#campus-agenda h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF5E5E;
+    margin-bottom: 15px;
+}
+
+#campus-research h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF5E5E;
+    margin-bottom: 15px;
+}
+
+#campus-research h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #006D5D;
+}
+
+#campus-research p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+}
+
+#campus-research .indent {
+    text-indent: 20px; /* Adjust the pixel value for the indent size */
+}
