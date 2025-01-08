@@ -2919,7 +2919,20 @@ ul li {
     margin-bottom: 15px;
 }
 
+#campus-researchfindings h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF5E5E;
+    margin-bottom: 15px;
+}
+
 #campus-research h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #006D5D;
+}
+
+#campus-researchfindings h3 {
     font-size: 20px;
     font-weight: bold;
     color: #006D5D;
@@ -2930,6 +2943,13 @@ ul li {
     font-weight: 500 !important;
     margin-bottom: 15px !important;
 }
+
+#campus-researchfindings p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+}
+
 
 #campus-research .indent {
     text-indent: 20px; /* Adjust the pixel value for the indent size */
@@ -2974,4 +2994,88 @@ ul li {
         margin-top: 20px; /* Add space between text and image */
     }
 }
+
+#campus-researchfindings .campus-intro-content {
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center-align content horizontally */
+    text-align: left; /* Ensure text aligns properly */
+}
+
+#campus-researchfindings .campus-researchfindings-image {
+    margin-top: 20px; /* Add spacing between the text and image */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    width: 100%; /* Ensure it fits within the section width */
+}
+
+#campus-researchfindings .campus-researchfindings-image img {
+    max-width: 100%; /* Make sure the image scales properly */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#campus-researchfindings .campus-intro-content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: left;
+}
+
+#campus-researchfindings .columns {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    justify-content: space-between;
+    gap: 20px; /* Space between columns */
+    width: 100%; /* Ensures columns take up full width */
+    margin-bottom: 20px; /* Adds spacing between text and the image */
+}
+
+#campus-researchfindings .column {
+    flex: 1; /* Makes both columns take up equal space */
+    min-width: 300px; /* Ensures columns don't shrink too much */
+}
+
+#campus-researchfindings .campus-researchfindings-image {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    width: 100%;
+}
+
+#campus-researchfindings .campus-researchfindings-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #campus-researchfindings .columns {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+
+    #campus-researchfindings .column {
+        width: 100%; /* Make each column take up the full width */
+    }
+}
+
+#campus-ideation h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF5E5E;
+    margin-bottom: 15px;
+}
+
+#campus-ideation h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #006D5D;
+}
+
+#campus-ideation p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+}
+
+
 
