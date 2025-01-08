@@ -3089,4 +3089,54 @@ ul li {
     display: inline-block; /* Ensures image is treated as block element for proper centering */
 }
 
+#campus-hifiwireframes .campus-intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#campus-hifiwireframes .campus-intro-text {
+    flex: 1;
+}
+
+#campus-hifiwireframes .campus-hifiwireframes-image {
+    width: 100%; /* Make the container full width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-top: 20px; /* Optional space between content and image */
+}
+
+#campus-hifiwireframes .campus-hifiwireframes-image img {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 900px; /* Optional max-width to prevent it from getting too large */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+    #campus-hifiwireframes .campus-hifiwireframes-image img {
+        width: 90%; /* Make image larger on smaller screens */
+        max-width: 100%; /* Ensures the image doesn’t go off screen */
+    }
+}
+
+#campus-hifiwireframes h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF5E5E;
+    margin-bottom: 15px;
+}
+
+#campus-hifiwireframes h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #006D5D;
+}
+
+#campus-hifiwireframes p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+}
+
 
