@@ -1630,13 +1630,13 @@ a#casestudy1-button {
 .wireframe-image {
     flex-shrink: 0; /* Prevent the image from shrinking */
     margin-left: auto;
-    margin-right: 50px; /* Move the image slightly to the left */
+    margin-right: 60px; /* Move the image slightly to the left */
     margin-top: 30px; /* Move the image slightly down */
 }
 
 /* Image styling */
 .wireframe-image img {
-    max-width: 260px; /* Increase the image size */
+    max-width: 330px; /* Increase the image size */
     height: auto; /* Maintain aspect ratio */
 }
 
