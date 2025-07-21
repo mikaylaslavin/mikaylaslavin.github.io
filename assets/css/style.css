@@ -191,7 +191,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
     background:url(../images/about/landingpage.gif)no-repeat;
     background-size:cover;
     background-position: center;
-    height:890px;
+    height:800px;
 }
 
 .welcome-hero:before{
@@ -268,10 +268,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
 }
 
 
-
 /*LANDING PAGE HEADER
 /*.header-text-area*/
+
 .header-text h2 {
+    padding-top: 100px;
     color: #fff;
     font-size: 38px;
     font-weight: 700;
