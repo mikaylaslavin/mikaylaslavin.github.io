@@ -397,6 +397,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #046C65;}
 }
 
 .single-about-img {
+    width: fit-content;
     position: relative;
     box-shadow: 0 5px 20px rgba(80, 14, 66, 0.3);
     margin-top: 25px; /* Adjust this value to move it down */
